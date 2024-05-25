@@ -11,9 +11,9 @@ function Header() {
       <Link href="/" className="flex items-center space-x-2" >
           <div className="bg-[#0160FE] w-fit">
             <Image 
-              src="https://www.shareicon.net/data/512x512/2015/08/26/91241_box_512x512.png"
+              src="https://www.shareicon.net/data/512x512/2015/08/31/93614_dropbox_512x512.png"
               alt="logo"
-              className="invert"
+          
               height={50}
               width={50} />
 
