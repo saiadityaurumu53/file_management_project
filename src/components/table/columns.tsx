@@ -4,6 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { FileType } from "../../../typings";
 import prettyBytes from "pretty-bytes";
 import {FileIcon, defaultStyles} from "react-file-icon";
+import {COLOR_EXTENSION_MAP} from "../../../constant";
 
 
 
@@ -16,11 +17,11 @@ export const columns: ColumnDef<FileType>[] = [
         const extension: string = type.split("/")[1];
 
         return (
-            <div>
+            <div className="w-10">
                 <FileIcon
                     extension = {extension}
                     labelColor = {COLOR_EXTENSION_MAP[extension]}
-
+                    // @ts-ignore
                     {...defaultStyles[extension]}
                 
                 />
@@ -50,7 +51,7 @@ export const columns: ColumnDef<FileType>[] = [
     accessorKey: "downloadURL",
     header: "Link",
     cell: ({renderValue, ...props}) => {
-        <a
+        return <a
             href={renderValue() as string}
             target="_blank"
             className="underline text-blue-400 hover:text-blue-600"
