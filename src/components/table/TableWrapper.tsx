@@ -20,7 +20,8 @@ function TableWrapper(
 
   return (
     <div>
-        <Button>Sort By..</Button>
+        <Button onClick={() => setSort(sort === "desc" ? "asc": "desc")}
+        >Sort By {sort === "desc" ? "Newest": "Oldest"}</Button>
 
         <DataTable columns={columns} data={skeletonFiles} />
     </div>

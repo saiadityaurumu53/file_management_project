@@ -11,3 +11,6 @@ Demo images:
 
 2. Dark mode main page
 ![alt text](image-1.png)
+
+3. Dashboard page in Dark mode which maps to the file management system
+![alt text](image-2.png)
